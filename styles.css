@@ -15,6 +15,19 @@
   --radius-2xl: 1.25rem;
 }
 
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+.--accent-500 {
+  color: var(--accent-500);
+}
+
+
+
+
+
 /* Utilidades de marca */
 .bg-brand-900{ background: var(--brand-900) !important; }
 .text-brand-800{ color: var(--brand-800) !important; }
@@ -75,16 +88,18 @@
 .hero-overlay{
   position:absolute;
   inset:0;
-  background: linear-gradient(180deg, rgba(15,44,70,.65) 0%, rgba(15,44,70,.55) 35%, rgba(15,44,70,.30) 100%);
+  background: linear-gradient(180deg, rgba(8, 25, 40, 0.65) 0%, rgba(15,44,70,.55) 35%, rgba(15,44,70,.30) 100%);
 }
 .hero-title{
   font-weight:800;
   letter-spacing:.2px;
   margin-bottom:.5rem;
+  line-height: 1.15;
+  font-size: clamp(28px, 4.5vw, 48px);
 }
 @media (min-width:992px){
   .hero{ min-height: 70vh; }
-  .hero-title{ font-size: clamp(2rem, 3vw, 3rem); }
+  
 }
 
 /* WhatsApp floating */
